@@ -2,13 +2,13 @@
 <suite name="Automation Suite" verbose="1" thread-count="2" parallel="tests">
     <test name="Registration" parallel="tests">
         <classes>
-            <class name="TestNgClass"/>
+            <class name="Addbooking"/>
         </classes>
     </test>
 
-      <test name="SecondTest" parallel="tests">
+      <test name="AddBooking" parallel="tests">
         <classes>
-    <class name="Secondtest"/>
+    <class name="AddInvoice"/>
       </classes>
     </test>
        </suite>
