@@ -12,31 +12,25 @@ public class AddBookingPage {
             bookingQuantity = $(byClassName("bookings-header__leftside-count")),
             addBookingBtn = $(byAttribute("key", "add")),
             equipmentStatusFilter = $(byAttribute("formcontrolname", "bookingStatuses")),
-            availableStatusChekBox = $(byClassName("shl-select-option-checkbox"),0),
-            fullyBookedCeckBox = $(byClassName("shl-select-option-checkbox"),1),
-            fullyBookedStatus = $(byClassName("card__details-status--full")),
-            partiallyBookedStatuss = $(byClassName("card__details-status--partial")),
-
-            freeStatuss = $(byClassName("card__details-status--free")),
-
-            submitBookinglBtn = $(byClassName("shl-button-content-container-value"),3),
-            backTorenTalBtn = $(byClassName("header__actions-back")),
-            openBookingdrawer = $(byId("Group_10668")),
+            availableStatusCheckBox = $(byClassName("shl-select-option-checkbox"),0),
+            fullyBookedCheckBox = $(byClassName("shl-select-option-checkbox"),1),
+           partiallyBookedCheckBox = $(byClassName("shl-select-option-checkbox"),2),
+            submitBookingBtn = $(byClassName("shl-button-content-container-value"),3),
+            backToRentalBtn = $(byClassName("header__actions-back")),
+            openBookingDrawer = $(byId("Group_10668")),
 
            bookingOverlapError = $(byText("Booking overlap")),
 
-
+          submitForDelete = $(byClassName("btn-primary")),
             clickSubmit = $(byText("Submit"));
 
 
 
 
 
-
-
     public ElementsCollection
-            addBookingQuantity = $$(byClassName("card__details-text--bold"));
-
+            addBookingQuantity = $$(byTagName("sm-equipment-card")),
+            bookingItemsDelete = $$(byClassName("booking-item__top-info-delete"));
 
 
 
